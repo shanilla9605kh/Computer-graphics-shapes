@@ -18,7 +18,7 @@ void main()
     color = getpixel(100, 130); //Getting the color of the pixel at (100,100)
 
     line(0, 220, maxx, 220);       //Horizontal line
-    line(320, 45, 320, maxy - 80); //Verticle line
+
 
     line(30, 280, 220, 380); //Drawing a line
     gotoxy(42, 4);           //Placing cursor
@@ -40,17 +40,17 @@ void main()
     pieslice(100, 200, 20, 120, 120); //Drawing a Pieslice
     gotoxy(42, 3);                    //Placing cursor on new location
 
+    gotoxy(42, 16);               //Placing cursor on new location
     ellipse(450, 130, 0, 300, 100, 50); //Drawing a Ellipse
     gotoxy(1, 16);                      //Placing cursor on new location
-
-    sector(75, 375, 15, 60, 200, 100); //Drawing a Sector
-    gotoxy(42, 16);                    //Placing cursor on new location
 
     rectangle(360, 280, 540, 380); //Drawing a rectangle
     gotoxy(1, 25);                 //Placing cursor on new location
     getch();                       //Pause to get user input
+    line(320, 45, 320, maxy - 80); //Verticle line
     cleardevice();                 //Clearing screen
 
+    
     gotoxy(1, 6);     //Placing cursor on a new location
     drawpoly(4, pts); //Draw a polygon
     gotoxy(1, 25);    //Placing cursor on a new location
